@@ -5,19 +5,10 @@ function myFunction(ary) {
 
     if(ary.length === 1) return 0;
 
-    var newAry = [];
-    var product = 1;
+    var tempProdcut = ary[0];
     for(var i = 0; i < ary.length; i++) {
-        
-        for(var j = 0; j < ary.length; j++) {
 
-            if(i !== j) {
-
-                product *= ary[j];
-            }
-        }
-        newAry.push(product);
-        product = 1;
+    	
     }
     return newAry;
 }
