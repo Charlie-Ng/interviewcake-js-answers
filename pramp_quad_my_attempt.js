@@ -29,6 +29,8 @@ function find_quad (ary, s) {
 		}
 	}
 
+	console.log(hashTable);
+
 	var arrayA = [];
 	var arrayB = [];
 	var result = [];
@@ -77,6 +79,6 @@ function checkUniqueness(aryA, aryB) {
 
 
 console.log(find_quad([5, 5, 4, 5, 7, 8, 9], 19)); //[ 0, 2, 1, 3 ]
-console.log(find_quad([1, 1, 3, 4, 5, 6,7,8,3,2,5,3,2, 19], 28)); //[ 0, 1, 6, 13 ]
+// console.log(find_quad([1, 1, 3, 4, 5, 6,7,8,3,2,5,3,2, 19], 28)); //[ 0, 1, 6, 13 ]
 
 
