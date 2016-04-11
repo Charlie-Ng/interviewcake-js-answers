@@ -24,7 +24,7 @@ console.log("done part 1");
 
 function findFib(n) {
 
-	if(n == 1 || n == 2) return 1;
+	if(n == 1 || n == 0) return n;
 
 	return findFib(n - 1) + findFib(n - 2);
 
