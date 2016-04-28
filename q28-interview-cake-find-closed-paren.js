@@ -45,11 +45,13 @@ function findClosedParen2(sentence, openParen) {
 	if(openParen > sentence.length - 1) return "incorrect openParen parameter";
 
 	var openCounter = 0;
+	var tempChar;
 
 	for(var i = openParen; i < sentence.length; i++) {
-
-		if(sentence[i] == '(') openCounter++;
-		if(sentence[i] == ')') openCounter--;
+		tempChar = sentence[i];
+		if(tempChar == '(') openCounter++;
+		else if(tempChar == ')') openCounter--;
+		
 		if(openCounter === 0) return i;
 	}
 
