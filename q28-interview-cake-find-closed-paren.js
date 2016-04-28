@@ -38,3 +38,26 @@ console.log(findClosedParen("Sometimes (when I nest them (my parentheticals) too
 console.log(findClosedParen("(So(when I nest them (my) a (like this (and this))).)", 3));
 //50
 
+//second attempt one pass 
+function findClosedParen2(sentence, openParen) {
+
+
+	if(openParen > sentence.length - 1) return "incorrect openParen parameter";
+
+	var openCounter = 0;
+
+	for(var i = openParen; i < sentence.length; i++) {
+
+		if(sentence[i] == '(') openCounter++;
+		if(sentence[i] == ')') openCounter--;
+		if(openCounter === 0) return i;
+	}
+
+	return "close paren not found";
+}
+
+console.log(findClosedParen2("Sometimes (when I nest them (my parentheticals) too much (like this (and this))) they get confusing.", 10));
+//79
+
+console.log(findClosedParen2("(So(when I nest them (my) a (like this (and this))).)", 3));
+//50
