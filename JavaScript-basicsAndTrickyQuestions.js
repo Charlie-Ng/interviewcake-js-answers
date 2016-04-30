@@ -1,7 +1,7 @@
 21+ questions and answers (for intermediate)
 
 // read again
-// 3.
+// 3. 5.
 
 1. What are the differences between null and undefined?
 // null: a variable that has been defined as an object null
@@ -17,7 +17,12 @@
 
 4. 11+ true false related questions that will trick you.
 5. As [] is true, [] == true should also be true. right?
+// no. if([]) is true because JavaScript is checking the existence of [] so it is true
+// [] == true is false because toString() is called on [] and true. That gives '' == 'true' false.
+
 6. How could you write a method on instance of a date which will give you next day?
+
+
 7. If you want to use an arbitrary object as value of this, how will you do that?
 8. Write a simple function to tell whether 2 is passed as parameter or not?
 9. How could you use Math.max to find the max value in an array?
