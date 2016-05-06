@@ -11,7 +11,6 @@ function findPalindrome(str) {
 	for(var i = 0; i < len; i++) {
 
 		var temp_i = i;
-		var jIndex;
 		for(var j = len - 1; j >= i; j--) {
 
 			if(str[temp_i] === str[j]) {
@@ -21,15 +20,15 @@ function findPalindrome(str) {
 				if(j === i) {
 
 					palindrome = str.substring(i, temp_i);
+					if(palindrome.length > maxPalindrome.length) {
+						maxPalindrome = palindrome;
+					}
 				}
 
 			}else {
 				temp_i = i;
 			}
 		}
-		if(palindrome.length > maxPalindrome.length) {
-			maxPalindrome = palindrome;
-		}	
 	}
 	return maxPalindrome;
 }
@@ -37,3 +36,4 @@ function findPalindrome(str) {
 console.log(findPalindrome("b112a211aaaaccccccccbbbbbbdcccccccaaaa311sdfsdfsdfkldsflllld"));//cccccccc
 console.log(findPalindrome("11cbbc11c1"));//11cbbc11
 console.log(findPalindrome("asdfasdfasdfasdfasdffdasasdfddkkddfdsafdafdafdafdasdfasdfsdafasdfasdf")); //asdfddkkddfdsa
+
