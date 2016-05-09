@@ -8,7 +8,7 @@ function jsBulitIn (str) {
 	return str;
 }
 
-console.log(jsBulitIn("charlieng"));
+console.log(jsBulitIn("charlieng")); //gneilrahc
 
 //traditional
 function traditional(str) {
@@ -23,7 +23,7 @@ function traditional(str) {
 	return newString.join('');
 }
 
-console.log(traditional("charlieng"));
+console.log(traditional("charlieng")); //gneilrahc
 
 //stack
 function node (val) {
@@ -68,7 +68,7 @@ function stackReverse (str) {
 	return newString;
 }
 
-console.log(stackReverse("charlieng"));
+console.log(stackReverse("charlieng")); //gneilrahc
 
 //js array (act like stack)
 function Stack() {
@@ -97,7 +97,7 @@ function jsReStr (str) {
 	return newStr;
 }
 
-console.log(jsReStr("charlieng"));
+console.log(jsReStr("charlieng")); //gneilrahc
 
 //recursvie
 function rerestr(str) {
@@ -108,5 +108,5 @@ function rerestr(str) {
 	return rerestr(str.substring(1)) + str[0];
 }
 
-console.log(rerestr("charlieng"));
+console.log(rerestr("charlieng")); //gneilrahc
 
