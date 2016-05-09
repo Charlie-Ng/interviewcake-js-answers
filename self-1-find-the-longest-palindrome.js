@@ -36,4 +36,4 @@ function findPalindrome(str) {
 console.log(findPalindrome("b112a211aaaaccccccccbbbbbbdcccccccaaaa311sdfsdfsdfkldsflllld"));//cccccccc
 console.log(findPalindrome("11cbbc11c1"));//11cbbc11
 console.log(findPalindrome("asdfasdfasdfasdfasdffdasasdfddkkddfdsafdafdafdafdasdfasdfsdafasdfasdf")); //asdfddkkddfdsa
-
+console.log(findPalindrome("HYTBCABADEFGHABCDEDCBAGHTFYW1234567887654321ZWETYGDE"));
